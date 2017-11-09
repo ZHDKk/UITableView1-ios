@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+{
+    UITableView *_tableView;
+    
+    //定义一个数据源
+    NSMutableArray *_arrayData;
+}
 
 
 @end
